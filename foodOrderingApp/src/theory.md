@@ -1,0 +1,44 @@
+# Theory about hooks,state variable
+
+
+-`javascript`
+   -`react uses one way data binding`
+   -`react-variable kind of state variable ,every component in react ,maintain a state`
+    -`what is state?`
+      -``
+    -`what is hooks?why it is needed?`
+      -`hooks is just a normal js function`
+    -`what is the useState?`
+      -`useState hook is use for creating a state variable`
+      -`useState is import via "react", the function returns a array` 
+    -`why do we need to create  useState hooks to make react variable?`
+      -`if you want to make your component dynamic thus the need of the useState variable comes into picture`
+      -`when ever state variable update ,react triggers a reconciliation cycle(re-renders the component)`
+    -`Default Import`
+      -`from "./components/Header.js": This specifies the location of the Header.js file. The "./components/" part means that the Header.js file is located in a folder named components within the current directory.`
+    -`named Import-****`
+      -`import {Title} from "./components/Header.js"` 
+      -`import * as xyz from "./components/Header.js" `
+      -`erom hole applayout <header/> er place e <xyz.header/>likte hoy` 
+      -`using the export key word in header.js file by export keyword`
+      -`functional component is a function that return jsx`
+      -`config driven UI -> we control our frontend via a configuration`
+      -`Body Component for body section: It contain all restaurant cards`
+      -`We are mapping restaurantList array and passing data to RestaurantCard component as props with unique key as index`
+    -`if no dependency array => useEffect is called on every rendering`
+      -`if dependency array is empty =[] =>useEffect is called on initial render just once`
+       -`if dependency array is [btnNameReact] => called everytime if btnNameReact is updated`
+    -`where we don't use the useState hook`
+      -`1>inside a if else condition`
+      -`2>inside a for loop`
+      -`3>outside of a functional component`
+    -chunking
+    -code spliting
+    -dynamic bundling
+    -lazy loading or onload loading
+  -Tailwind css
+    -css on the go(in the same file)
+    -resusability
+    -less bundle  size (minimal size of css)
+    -Flexible(customizable)
+    
